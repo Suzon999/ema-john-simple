@@ -2,7 +2,7 @@ import React from 'react';
 import './Product.css'
 
 const Product = (props) => {
-    console.log(props.product);
+    // console.log(props.product);
     const { name, img, price, ratings, seller } = props.product
 
     return (
@@ -15,7 +15,7 @@ const Product = (props) => {
 
                 <p>Manufacturer :{seller} </p>
             </div>
-            <button className='btn-cart'>
+            <button onClick={() => props.handleAddToCart(props.product)} className='btn-cart'>
                 <h5>Add To Cart</h5>
             </button>
         </div>
