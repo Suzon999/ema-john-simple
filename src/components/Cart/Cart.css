@@ -1,4 +1,6 @@
 .cart-info {
     padding-left: 20px;
     margin-top: 40px;
+    position: sticky;
+    top: 0;
 }
